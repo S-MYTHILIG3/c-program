@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,v;
+    printf("enter the size:");
+    scanf("%d",&n);
+    int a[n],i,j,t;
+    printf("enter the array value:");
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    printf("to insert values insert-1,delete-2");
+    scanf("%d",&v);
+    switch(i)
+    {
+        
+       
+        
+        
+    
+   
+    }
+    printf("arrays");
+    for(i=0;i<n;i++)
+    printf("%d\n",a[i]);
+    return 0;
+}
