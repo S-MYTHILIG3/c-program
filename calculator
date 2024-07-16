@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+int x=10,y=20,n,A;
+printf("enter your choice :");
+scanf("%d",&n);
+if(n==1)
+{
+    A=x+y;
+    printf ("the addition is :%d",A);
+}
+else if(n==2)
+{
+    A=x-y;
+    printf ("the subtraction is :%d",A);
+}
+else if(n==3)
+{
+    A=x*y;
+    printf ("the multiplication is :%d",A);
+}
+else
+{
+    A=x/y;
+    printf ("the division is :%d",A);
+}
+
+    return 0;
+}
