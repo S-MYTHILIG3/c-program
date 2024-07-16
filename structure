@@ -1,0 +1,57 @@
+#include <stdio.h>
+void main ()
+{
+  struct
+  {
+    char code[100];
+    char result[50];
+    int mark;
+    char grade[50];
+  } s[10];
+  int n;
+  printf ("enter no.of subjects: ");
+  scanf ("%d", &n);
+  if (n < 10)
+    {
+      printf ("enter code&mark\n");
+      for (int i = 0; i < n; i++)
+	{
+	  for (int j = 0; j < 7; j++)
+	    {
+	      scanf ("%c", &s[i].code[j]);
+	    }
+	  scanf ("%d", &s[i].mark);
+	}
+
+      printf ("CODE\t\tGRADE\t\tRESULT\n");
+      for (int i = 0; i < n; i++)
+	{
+	  printf ("%s\t\t", s[i].code);
+
+
+	  if (s[i].mark > 90)
+	    {
+	      printf ("A\t\t");
+	      printf ("pass\t\t");
+	    }
+	  else if (s[i].mark >= 81 && s[i].mark <= 90)
+	    {
+	      printf ("B\t\t");
+	      printf ("pass\t\t");
+	    }
+	  else if (s[i].mark >= 71 && s[i].mark <= 80)
+	    {
+	      printf ("C\t\t");
+	      printf ("pass\t\t");
+	    }
+	  else
+	    {
+	      printf ("U\t\t");
+	      printf ("fail\t\t");
+	    }
+	  printf ("\n");
+	}
+
+    }
+
+}
