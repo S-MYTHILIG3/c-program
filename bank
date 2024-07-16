@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main()
+{
+    int pinno=1234567,accno=987651234,amount=10000,n,p,balance,dp,opin,npin,deposit,repin;
+    float wd;
+    printf("enter your pinno:\n");
+    scanf("%d",&p);
+    printf("enter choice\n");
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1:
+    if(pinno==p)
+    {
+        printf("your pin is correct\n");
+    }
+    else
+    {
+        printf("your pin is incorrect");
+    }
+    case 2:
+    printf("enter your withdraw amount\n");
+    scanf("%f",&wd);
+    if(amount>wd)
+    {
+        printf("withdraw completed\n");
+        balance=amount-wd;
+        printf("current balance:%d\n",balance);
+    }
+    else
+    {
+        printf("oops!you do not have a proper balance amount..");
+    }
+    case 3:
+    printf("enter your deposit amount:\n");
+    scanf("%d",&dp);
+    deposit=balance+dp;
+    printf("total balance:%d\n",deposit);
+    case 4:
+    printf("enter your old pinno\n");
+    scanf("%d",&opin);
+    if(pinno==opin)
+    {
+        printf("enter new pin:\n");
+        scanf("%d",&npin);
+        printf("Re-Type your pin:\n");
+        scanf("%d",&repin);
+        printf("your pin has changed\n");
+    }
+    else
+    {
+        printf("your pin is incorrect");
+    }
+
+    return 0;
+}
+}
