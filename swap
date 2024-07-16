@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void main()
+{
+    int a,b,c;
+    int swap(int a,int b,int c);
+    int swap();
+    printf("enter value\n");
+    scanf("%d%d%d",&a,&b,&c);
+    printf("after:\na:%d\nb:%d\nc:%d",a,b,c);
+}
+int swap(int x,int y,int z)
+{
+    int temp;
+    temp=x;
+    x=y;
+    y=z;
+    z=temp;
+    return x,y,z;
+}
