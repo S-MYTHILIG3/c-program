@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    int rec(int);
+    printf("enter the number");
+    scanf("%d",&n);
+    int f= rec(n);
+    printf("square of numbers=%d",f);
+    }
+    int rec(int n)
+    {
+    if(n==0)
+    return 1;
+    else
+return (n*n)+rec(n-1);
+    
+}
