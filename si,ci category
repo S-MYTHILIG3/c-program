@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+
+void main()
+{
+    int p,n,r;
+    int si();
+    void ci(int,int,int);
+    printf("enter the values:");
+    scanf("%d%d%d",&p,&n,&r);
+    ci(p,n,r);
+    int s=si();
+    printf("simple interest:%d",s);
+    
+}
+    
+
+ void ci (int p,int n,int r){
+   
+    int c=p*(pow((1+r/100),n))-p;
+    printf("compound interest:%d\n",c);
+    
+}
+int si(){
+    int p,r,n;
+     printf("enter the values:");
+    scanf("%d%d%d",&p,&n,&r);
+   
+    int s=(p*n*r)/100;
+    
+  return s;
+}
